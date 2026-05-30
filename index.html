@@ -3,132 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apple</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: #9b9b9b; font-family: monospace;font-size: 15px; margin: 20px;">
-    <div style="background: white; width: 70%; margin: auto; border: 1.5px solid #dcdcdc; box-shadow:10px 10px 10px #333333">
-        <div style="text-align: right; border-bottom: 1px solid; padding: 10px;background: #c0c0c0;">
-            <span style="font-size: 16px;">[_]</span>
-            <span style="font-size:20px;">[●]</span>
-            <span style="font-size: 20px;">[X]</span>
-            <h2 align="center" id="top">HTML Explorer</h2>
-        </div>
-
-        <div style="background-color:#eeeeee; padding:10px; border-bottom:2px solid black;">
-             &#128269; <input type="text" placeholder="Search" size="20"> 
-             <div style="text-align: right;">
-                <a href="#HTML" style="border:1px solid black; padding:8px; text-decoration:none; margin:5px; color:black;">HTML</a>
-                <a href="#tags" style="border:1px solid black; padding:8px; text-decoration:none; margin:5px; color:black;">HTML Tags</a>
-                <a href="#gallery" style="border:1px solid black; padding:8px; text-decoration:none; margin:5px; color:black;">HTML Gallery</a>
-                <a href="#LLs" style="border:1px solid black; padding:8px; text-decoration:none; margin:5px; color:black;">HTML Lists and Links</a>
-                <a href="#feedback" style="border:1px solid black; padding:8px; text-decoration:none; margin:5px; color:black;">Feedback</a>
-             </div>
-        </div>
-
-        <div style="padding:30px; text-align: center;">
-            <h1>INSIDE THE BROWSER</h1>
-            <h3>Complete HTML Tag Explorer</h3>
-            <p>This webpage demonstrates how browsers interpret HTML tags, metadata, media, hyperlinks, forms, tables, lists, and semantic structures.</p>
-        </div>
-
-        <hr>
-
-        <div id="HTML" style="border:1px solid gray; margin:20px; padding:20px; display: flex;">
-            <h2><em>What's HTML</em></h2>
-            <div style="border:3px solid gray; margin:20px; padding:20px;">
-                <h3><mark>What is HTML?</mark></h3>
-                <blockquote>HTML, or HyperText Markup Language, is the standard language used to create the structure of web pages. It uses tags and elements to organize text, images, links, tables, forms, and media so that web browsers can display them properly. HTML serves as the basic foundation of almost every website on the internet.</blockquote>
+<body>
+    <div class="outer">
+        <header class="header">
+            <div class="internal">
+                <div class="header-links">
+                    <ul>
+                        <li class="logo"><a href="/"><img src="images/icons/logo.png"></a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li class="search"><a href="/search/"><img src="images/icons/search-icon.png"></a></li>
+                        <li class="cart"><a href="/cart/"><img src="images/icons/cart.png"></a></li>
+                    </ul>
+                </div>
             </div>
-            <div style="border:3px solid gray; margin:20px; padding:20px;">
-                <h3><mark>Breif History</mark></h3>
-                <blockquote>HTML was first developed by Tim Berners-Lee in 1991 as part of the creation of the World Wide Web, allowing documents to be linked and shared through browsers. Over time, HTML evolved through several versions, including XHTML, until HTML5 became the modern standard in 2014 with improved multimedia and semantic features</blockquote>
+        </header>
+        <section class="main-highlight">
+            <div class="internal">
+                <div class="model">16-inch Model</div>
+                <div class="product-title">MacBook Pro</div>
+                <div class="brief-description">The best for the brightest</div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn more</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+                <div class="main-image"><img src="/images/home/mac-laptop.jpg"></div>
             </div>
-        </div>
-        <div id="tags" style="border:1px solid gray; margin:20px; padding:20px;">
-                <table border="1" width="100%" cellpadding="10">
-                    <caption>
-                        <h2><em>HTML Tags</em></h2>
-                    </caption>
-                    <colgroup><col style="background-color:aqua"><col style="background-color: olivedrab;"></colgroup>
-                    <tr><th>HTML Source Code</th><th>Browser Display</th></tr>
-                    <tr>
-                        <td><pre>
-&lt;h1&gt;Welcome&lt;/h1&gt;
-&lt;p&gt;Hello Browser&lt;/p&gt;
-&lt;a href="#"&gt;Open Link&lt;/a&gt;
-&lt;b&gt;Boldy&lt;/b&gt;
-&lt;i&gt;Italic&lt;/i&gt;
-&lt;sub&gt;Subscript&lt;/sub&gt;and&lt;sup&gt;Superscript&lt;/sup&gt;
-&lt;big&gt;Big text&lt;/big&gt;
-&lt;u&gt;Underline&lt;/u&gt;
-&lt;strike&gt;Strike-Through&lt;/strike&gt;
-
-                        </pre></td>
-                    <td><h1>Welcome</h1><p>Hello Browser</p><a href="#">Open Link</a><br><br><b>Boldy</b><br><br><i>Italic</i><p><sub>Subscript</sub>and<sup>Superscript</sup></p><big>Big text</big><br><br><u>Underline</u><br><br><strike>Strike-Through</strike> </td>
-                    </tr>
-                </table>
-        </div>
-
-        <div style="border:1px solid gray; margin:20px; padding:20px;">
-            <h1>HTML Gallery</h1>
-            <p>
-HTML has developed greatly since its invention by Tim Berners-Lee in 1991. What began as a simple language for sharing linked scientific documents gradually expanded through multiple versions, adding tables, forms, images, stricter XHTML rules, and finally modern multimedia and semantic features in HTML5. This gallery highlights the major milestones that shaped HTML into the foundation of today’s web. 
-</p>
-            <div style="display: flex;">
-                <div style="margin: 25px;"><img src="tim.jpeg" width="250px"><figcaption><mark style="background-color: orange;">Sir Tim Berners-Lee, coined the term World Wide Web</mark></figcaption></div>
-
-                <div style="margin: 25px;"><img src="hero-html.png" width="250px"><figcaption>T<mark style="background-color: orange;">The HTML we all know and love</mark></figcaption></div>
-                <div style="margin: 25px;"><img src="22-mosaic-logo.webp" width="250px"><figcaption><mark style="background-color: orange;">The first ever web browser</mark></figcaption></div>
+        </section>
+        <section class="second-highlight">
+            <div class="internal">
+                <div class="product-title">iPhone 11 Pro</div>
+                <div class="brief-description">Pro cameras.Pro display.Pro performance</div>
+                <div class="pricing">From $24.95/mo. or $599 with trade-in.<sup>1</sup></div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn more</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
             </div>
-            <figure style="text-align: center;">
-                <video controls style="width: 800px;">
-                    <source src="HTML in 100 Seconds - Fireship (720p, h264).mp4">
-                </video>
-                <figcaption><mark style="background-color: orange;">HTML in 100 seconds</mark></figcaption>
-            </figure>
-        </div>
+        </section>
+        <section class="third-highlight">
+            <div class="internal">
+                <div class="product-title">iPhone 11</div>
+                <div class="brief-description">Just the right amount of everything</div>
+                <div class="pricing">From $16.62/mo. or $399 with trade-in.<sup>1</sup></div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn more</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="fourth-highlight">
+            <div class="left-side">
+                <div class="top-logo">
+                    <div class="logo">
+                        <img src="/images/icons/watch-series5-logo.png">
+                    </div>
+                </div>
+                <div class="brief-description">
+                    With the new Always-On Retina display.
+                    You've never seen a watch like this.
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn More</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="top-logo">
+                    <div class="logo">
+                        <img src="/images/icons/apple-card-logo.png">
+                    </div>
+                </div>
+                <div class="brief-description">
+                    Get 3% Daily Cash on purchases from Apple using Apple Card
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn More</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="fifth-highlight">
+            <div class="left-side">
+                <div class="logo">
+                    <img src="/images/icons/apple-tv-logo.png">
+                </div>
+                <div class="tvshow-logo">
+                    <img src="/images/icons/servant-logo.png">
+                </div>
+                <div class="watch-more">
+                    <ul>
+                        <a href="#">Watch the trailer</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="top-logo">
+                    <div class="logo">
+                        <h4>AirPods Pro</h4>
+                    </div>
+                </div>
+                <div class="brief-description">
+                    Magic like you've never heard.
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn More</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="sixth-highlight">
+            <div class="left-side">
+                <div class="top-logo">
+                    16-inch model
+                    <div class="logo">
+                        <h4>MacBook Pro</h4>
+                    </div>
+                </div>
 
-        <div id="LLs" style="border:1px solid gray; margin:20px; padding:20px;">
-    <h2>LISTS AND HYPERLINKS</h2>
-
-    <p>
-        HTML lists help organize information, while hyperlinks connect one page or section to another.
-        Together, they make webpages easier to navigate and understand.
-    </p>
-
-    <h3>Unordered List of Browser Features</h3>
-    <ul>
-        <li>External link:<a href="wikipedia.org">Visit Wikipedia</a></li>
-        <li>Internal link:<a href="#top">Back to top</a></li>
-        <li>Another internal link:<a href="#feedback">Contact HTML</a></li>
-    </ul>
-
-    <h3>Ordered List of Browser Actions</h3>
-    <ol>
-        <li>Open HTML file</li>
-        <li>Read the tags</li>
-        <li>Display webpage content</li>
-    </ol>
-    
-</div>
-
-        <div  id="feedback" style="border:1px solid gray; margin:20px; padding:20px;">
-            <fieldset>
-                <legend><h1>Feedback</h1></legend>
-                Name:<br><input type="text" placeholder="Enter yout full name..." required><br><br>
-                Email:<br><input type="email" placeholder="Enter your email..." required><br><br>
-                Phone Number:<br>+251<input type="tel" placeholder="Enter you Phone number"><br><br>
-                What color do you like most:<br><input type="color"><br><br>
-                On a scale of 1-5 rate your experince:<input type="range" min="0" max="5" step="1" value="3"><br><br>
-                Whats on you mind:<br><textarea placeholder="Your feedback is much appreciated..." style="width: 500px;height: 125px;"></textarea>
-            </fieldset>
-
-        </div>
-        
-        <div style="background-color:#c0c0c0; text-align:center; padding:15px; margin-top:20px; border-top:2px solid black;">
-        Browser Session Completed Successfully.<br>
-        Thank You For Exploring How HTML Comes To Life.
-        </div>
+                <div class="brief-description">
+                    The best for the brightest.
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn More</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="top-logo">
+                    <div class="logo">
+                        <img src="/images/icons/new-ipad-logo.png">
+                    </div>
+                </div>
+                <div class="brief-description">
+                    Like a computer. Unlike any computer.
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Learn More</a></li>
+                        <li><a href="#">Buy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="internal">
+                <div class="upper-text">
+                    1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in 
+                    of iPhone 8 Plus and iPhone X in good condition. Additional trade‑in values require purchase of a new iPhone, 
+                    subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to 
+                    refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, 
+                    government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full 
+                    value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: 
+                    Available to qualified customers and requires 0% APR, 24‑month installment loan with Citizens One, and iPhone 
+                    activation with AT&T;, Sprint, T‑Mobile, or Verizon. <a href="#">Full terms apply.</a>
+                </div>
+                <div class="footer-links">
+                    <div class="link1">
+                        <h3>Shop and Learn</h3>
+                        <ul>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">TV</a></li>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">AirPods</a></li>
+                            <li><a href="#">HomePod</a></li>
+                            <li><a href="#">iPod touch</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="link2">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Apple Music</a></li>
+                            <li><a href="#">Apple News+</a></li>
+                            <li><a href="#">Apple TV+</a></li>
+                            <li><a href="#">Apple Arcade</a></li>
+                            <li><a href="#">Apple Card</a></li>
+                            <li><a href="#">iCloud</a></li>
+                        </ul>
+                        <h3>Account</h3>
+                        <ul>
+                            <li><a href="#">Manage Your Apple ID</a></li>
+                            <li><a href="#">Apple Store Account</a></li>
+                            <li><a href="#">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="link3">
+                        <h3>Apple Store</h3>
+                        <ul>
+                            <li><a href="#">Find a Store</a></li>
+                            <li><a href="#">Genius Bar</a></li>
+                            <li><a href="#">Today at Apple</a></li>
+                            <li><a href="#">Apple Camp</a></li>
+                            <li><a href="#">Field Trip</a></li>
+                            <li><a href="#">Apple Store App</a></li>
+                            <li><a href="#">Refurbished and Clearnce</a></li>
+                            <li><a href="#">Financing</a></li>
+                            <li><a href="#">Apple Trade In</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Shopping Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="link4">
+                        <h3>For Business</h3>
+                        <ul>
+                            <li><a href="#">Apple and Business</a></li>
+                            li><a href="#">Shop for Business</a></li>
+                        </ul>
+                        <h3>For Education</h3>
+                        <ul>
+                            <li><a href="#">Apple and Education</a></li>
+                            <li><a href="#">Shop for College</a></li>
+                        </ul>
+                        <h3>For Healthcare</h3>
+                        <ul>
+                            <li><a href="#">Apple in Healthcare</a></li>
+                            <li><a href="#">Health on Apple Watch</a></li>
+                            <li><a href="#">Health Records on iPhone</a></li>
+                        </ul>
+                        <h3>For Government</h3>
+                        <ul>
+                            <li><a href="#">Shop for Government</a></li>
+                            <li><a href="#">Shop for Veterans and Military</a></li>
+                        </ul>
+                    </div>
+                    <div class="link5">
+                        <h3>Apple Values</h3>
+                        <ul>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Environment</a></li>
+                            <li><a href="#">Inclusion and Diversity</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Supplier Responsibility</a></li>
+                        </ul>
+                        <h3>About Apple</h3>
+                        <ul>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Apple Leadership</a></li>
+                            <li><a href="#">Job Opportunities</a></li>
+                            <li><a href="#">Investors</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Contact Apple</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            <div class="my-apple">
+                More ways to shop: <a href="#">Find an Apple Store </a>or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
+            </div>
+            <div class="copyright-wrapper">
+                <div class="copyright">
+                    Copyright © 2019 Apple Inc. All rights reserved.
+                </div>
+                <div class="footer-links-terms">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Sales and Refunds</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="footer-country"> 
+                    <div class="flag"><img src="/images/icons/16.png"></div>
+                    <div class="country-name">United States</div>
+                </div>
+            </div>
+            </div>
+        </footer>
     </div>
 
 </body>
